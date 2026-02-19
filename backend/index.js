@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
-import { connectMongoose } from "./config/connect.js";
+import { connectDB } from "./src/config/connect.js";
 import cors from "cors";
 
 // Routes Import
@@ -16,7 +16,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-connectMongoose();
+connectDB();
 
 // API Endpoints
 app.use("/api/auth", authRoutes);

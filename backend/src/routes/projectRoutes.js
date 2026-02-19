@@ -1,6 +1,6 @@
 import express from "express";
 import { createProject, updateProject, addMemberToProject } from "../controllers/projectController.js";
-import { protectRoute } from "../middlewares/authMiddleware.js";
+import { protectRoute } from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 

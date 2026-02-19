@@ -1,6 +1,6 @@
 import express from "express";
 import { addComment, getTaskComments } from "../controllers/commentController.js";
-import { protectRoute } from "../middlewares/authMiddleware.js";
+import { protectRoute } from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
