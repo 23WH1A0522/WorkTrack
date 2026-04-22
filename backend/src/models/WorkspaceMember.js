@@ -5,10 +5,10 @@ const workspaceMemberSchema = new mongoose.Schema(
     workspaceId: 
     { 
       type: mongoose.Schema.Types.ObjectId, 
-      ref: "Workspace", 
+      ref: "WorkSpace",
       required: true 
     },
-    Id: 
+    userId: 
     { 
       type: mongoose.Schema.Types.ObjectId, 
       ref: "User", 
@@ -16,8 +16,8 @@ const workspaceMemberSchema = new mongoose.Schema(
     },
     role: { 
       type: String, 
-      enum: ["Admin", "Member"], 
-      default: "Member" 
+      enum: ["ADMIN", "MEMBER"], 
+      default: "MEMBER" 
     },
   },
   { timestamps: true }

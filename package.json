@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:backend": "node backend/index.js",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build"
   },
   "keywords": [],
   "author": "",

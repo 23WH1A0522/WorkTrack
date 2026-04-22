@@ -10,20 +10,29 @@ const workspaceSchema = new mongoose.Schema(
     name: 
     { 
       type: String, 
-      required: true,
-      unique: true
+      required: true
     },
     slug: 
     { 
       type: String, 
-      required: true, 
-      unique: true 
+      required: true 
     },
     ownerId: 
     { 
       type: mongoose.Schema.Types.ObjectId, 
-      ref: "User", 
+      ref: "User",
       required: true 
+    },
+    imageUrl: {
+      type: String,
+    },
+    description: {
+      type: String,
+      default: null,
+    },
+    settings: {
+      type: Object,
+      default: {},
     },
     role: {
       type: String,
@@ -32,5 +41,7 @@ const workspaceSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
+
+workspaceSchema.index({ ownerId: 1, slug: 1 }, { unique: true });
 
 export default mongoose.model("WorkSpace", workspaceSchema);

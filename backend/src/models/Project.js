@@ -10,14 +10,13 @@ const projectSchema = new mongoose.Schema(
     workspaceId: 
     { 
         type: mongoose.Schema.Types.ObjectId, 
-        ref: "Workspace", 
+        ref: "WorkSpace", 
         required: true 
     },
     name: 
     { 
         type: String, 
-        required: true,
-        unique: true
+        required: true
     },
     description: 
     { 
@@ -26,8 +25,8 @@ const projectSchema = new mongoose.Schema(
     status: 
     { 
       type: String, 
-      enum: ["Planning", "Active", "Completed"], 
-      default: "Planning" 
+      enum: ["PLANNING", "ACTIVE", "COMPLETED", "ON_HOLD", "CANCELLED"], 
+      default: "PLANNING" 
     },
     progress: 
     { 
@@ -41,6 +40,11 @@ const projectSchema = new mongoose.Schema(
     endDate: 
     { 
         type: Date 
+    },
+    teamLeadId:
+    {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User"
     }
   },
   { timestamps: true }

@@ -16,8 +16,8 @@ const projectMemberSchema = new mongoose.Schema(
     },
     role: { 
         type: String, 
-        enum: ["Teamlead", "Contributor", "Manager"], 
-        default: "Contributor" 
+        enum: ["TEAM_LEAD", "CONTRIBUTOR", "MANAGER"], 
+        default: "CONTRIBUTOR" 
     }
   },
   { timestamps: true }
