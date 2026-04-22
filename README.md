@@ -1,28 +1,11 @@
-<<<<<<< HEAD
-# WorkTrack
-
-WorkTrack is now wired as a working local MERN project:
-- `frontend` is a Vite React app using Redux and the Express API
-- `backend` is an Express + MongoDB API with JWT auth
-- a demo workspace, project, tasks, and demo users are seeded automatically on first backend start
-=======
 # 🚀 WorkTrack - MERN Project Management Platform
 
 WorkTrack is a powerful full-stack **Project Management Web Application** inspired by tools like Jira and Asana. It is designed to help teams collaborate efficiently, manage projects, track tasks, and organize workflows in one centralized platform.
 
 Built using the **MERN Stack (MongoDB, Express.js, React.js, Node.js)**, WorkTrack provides secure authentication, workspace management, Kanban task tracking, team collaboration, and automated email notifications. :contentReference[oaicite:0]{index=0}
->>>>>>> e151629300c371c88ad47c69c8f287c72d31726c
 
-## Local setup
+---
 
-<<<<<<< HEAD
-1. Start MongoDB locally on `mongodb://127.0.0.1:27017`
-2. Start the backend from the project root:
-
-```bash
-npm run dev:backend
-```
-=======
 ## 📌 Features
 
 ### 🔐 Authentication
@@ -67,19 +50,9 @@ Supports:
 - Task Assignment Emails
 - Due Date Reminders
 - Status Update Alerts
->>>>>>> e151629300c371c88ad47c69c8f287c72d31726c
 
-3. Start the frontend from the project root in another terminal:
+---
 
-<<<<<<< HEAD
-```bash
-npm run dev:frontend
-```
-
-4. Open `http://localhost:5173`
-
-## Demo login
-=======
 ## 🛠️ Tech Stack
 
 ### Frontend
@@ -106,18 +79,9 @@ npm run dev:frontend
 
 ### Email Service
 - Nodemailer (Brevo SMTP)
->>>>>>> e151629300c371c88ad47c69c8f287c72d31726c
 
-- Email: `alex@worktrack.demo`
-- Password: `demo12345`
+---
 
-<<<<<<< HEAD
-## Environment
-
-Backend env lives in [backend/.env](/c:/Users/rajag/OneDrive/Desktop/sirisha/test_worktrack/WorkTrack/backend/.env).
-
-Frontend env lives in [frontend/.env](/c:/Users/rajag/OneDrive/Desktop/sirisha/test_worktrack/WorkTrack/frontend/.env).
-=======
 ## 🏗️ System Architecture
 
 Frontend (React + Redux)  
@@ -125,19 +89,9 @@ Frontend (React + Redux)
 Backend API (Node.js + Express.js)  
 ⬇  
 MongoDB Database
->>>>>>> e151629300c371c88ad47c69c8f287c72d31726c
 
-## Verified
+---
 
-<<<<<<< HEAD
-- Frontend lint passes
-- Frontend production build passes
-
-## Notes
-
-- The backend needs a running MongoDB instance to start successfully.
-- The seeded data is only created when the users collection is empty.
-=======
 ## 📂 Project Structure
 
 ### Backend
@@ -167,6 +121,7 @@ backend/
 └── package.json
 
 
+
 ### Frontend
 
 src/
@@ -184,6 +139,7 @@ src/
 ├── layouts/
 
 └── App.jsx
+
 
 
 ---
@@ -266,4 +222,3 @@ WorkTrack is a real-world MERN Stack project management platform built for moder
 ## ⭐ Support
 
 If you like this project, give it a ⭐ on GitHub.
->>>>>>> e151629300c371c88ad47c69c8f287c72d31726c
